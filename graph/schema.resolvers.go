@@ -11,11 +11,19 @@ import (
 	"github.com/subAlgo/testGinDoc/graph/model"
 )
 
-func (r *mutationResolver) CreateTodo(ctx context.Context, input model.NewTodo) (*model.Todo, error) {
+func (r *mutationResolver) CreateQuestion(ctx context.Context, input model.QuestionInput) (*model.Question, error) {
 	panic(fmt.Errorf("not implemented"))
 }
 
-func (r *queryResolver) Todos(ctx context.Context) ([]*model.Todo, error) {
+func (r *mutationResolver) CreateChoice(ctx context.Context, input *model.ChoiceInput) (*model.Choice, error) {
+	panic(fmt.Errorf("not implemented"))
+}
+
+func (r *queryResolver) Questions(ctx context.Context) ([]*model.Question, error) {
+	panic(fmt.Errorf("not implemented"))
+}
+
+func (r *queryResolver) Choices(ctx context.Context) ([]*model.Choice, error) {
 	panic(fmt.Errorf("not implemented"))
 }
 
