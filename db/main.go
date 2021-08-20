@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	"github.com/subAlgo/testGinDoc/graph/model"
+	_ "github.com/jinzhu/gorm/dialects/postgres"
 )
 
 type dbConfig struct {
